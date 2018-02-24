@@ -58,6 +58,6 @@ describe('objects and context', function() {
 
     var obj = new C();
 
-    expect(objectsAnswers.iterate(obj)).to.eql([ 'foo: bar', 'baz: bim' ]);
+    expect(objectsAnswers.iterate(obj)).to.eql([{ foo: 'bar' }, { baz: 'bim' }]);
   });
 });
